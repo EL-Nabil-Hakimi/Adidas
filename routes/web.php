@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 //l'affichage des pages
 Route::get('/Product', [ProductController::class , 'index'])->name("ProductView");
 Route::get('/Client', [ClientController::class , 'index'])->name("ClientView");
+Route::get('/', [ClientController::class , 'index'])->name("ClientView");
 Route::get('/Categorie', [CategorieController::class , 'index'])->name("CategorieView");
 
 //l'affichage des page D'ajout
